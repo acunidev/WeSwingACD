@@ -31,10 +31,6 @@ public class AssistentsFragment extends Fragment implements SelectListenerProfes
     List<User> userList;
     RecyclerView novetatsRecycler;
     AdapterProfessors adapterProfessors;
-    User selectProfessor;
-    TextView titol,tipus,data,descripcio;
-    Switch asistencia;
-    CardView cardView;
 
     public AssistentsFragment() {
         // Required empty public constructor
