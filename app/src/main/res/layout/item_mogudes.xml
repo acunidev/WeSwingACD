@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/data_moguda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fechaCumpl"
+        android:paddingLeft="5sp"
+        android:textColor="@color/tematicRed"
+        android:background="@color/brown_light"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/pfp_moguda"
+        style="@style/RoundCorner"
+        android:layout_width="105dp"
+        android:layout_height="143dp"
+        android:layout_below="@+id/data_moguda"
+        android:layout_marginTop="10sp" />
+
+    <TextView
+        android:id="@+id/title_moguda"
+        android:layout_marginTop="10sp"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_moguda"
+        android:layout_alignParentEnd="true"
+        android:text="@string/placeholder_moguda_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/orgnitzador_moguda"
+        android:layout_marginTop="10sp"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_moguda"
+        android:layout_alignParentEnd="true"
+        android:text="@string/organitzat_per_placeholder"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/duracio_moguda"
+        android:layout_marginTop="10sp"
+        android:layout_width="270sp"
+        android:maxWidth="270sp"
+        android:layout_height="20sp"
+        android:maxHeight="20sp"
+        android:layout_below="@+id/orgnitzador_moguda"
+        android:layout_alignParentEnd="true"
+        android:text="@string/duracio_mogudes"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/lloc_moguda"
+        android:layout_marginTop="10sp"
+        android:layout_width="270sp"
+        android:maxWidth="270sp"
+        android:layout_height="20sp"
+        android:maxHeight="20sp"
+        android:layout_below="@+id/duracio_moguda"
+        android:layout_alignParentEnd="true"
+        android:text="@string/placeholder_lloc_moguda"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/assistentsTV"
+        android:layout_marginTop="10sp"
+        android:layout_width="270sp"
+        android:maxWidth="270sp"
+        android:layout_height="20sp"
+        android:maxHeight="20sp"
+        android:layout_below="@+id/lloc_moguda"
+        android:layout_alignParentEnd="true"
+        android:text="@string/assistents_placeholder_moguda"
+        android:textSize="16sp"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pfp_escola"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/we_swing_icon"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/title_escola"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="I'm beginning to see the light (0 assistents) avui a les 22:10"
+            android:layout_toRightOf="@id/pfp_escola"/>
+
+        <TextView
+            android:id="@+id/desc_escola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_escola"
+            android:layout_toRightOf="@id/pfp_escola"
+            android:text="Fa 10 hores"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/title_escola"
+            android:src="@drawable/flecha_next"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

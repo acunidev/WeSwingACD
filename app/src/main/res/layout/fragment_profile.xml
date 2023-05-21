@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_pic"
+                style="@style/RoundCorner"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:shapeAppearanceOverlay="@style/RoundCorner"
+                tools:src="@drawable/user1" />
+
+            <TextView
+                android:id="@+id/nom_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="ALBA CAS LEMONHOP"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <!-- This FrameLayout insets its children based on system windows using
+                 android:fitsSystemWindows. -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/fullscreen_content_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <ToggleButton
+                    android:id="@+id/seguir_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:padding="20dp"
+                    android:textColor="#C3BBBB"
+                    android:textOff="SEGUIR"
+                    android:textOn="DEIXAR DE SEGUIR" />
+
+                <Button
+                    android:id="@+id/missarge_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:padding="20dp"
+                    android:text="Missatge"
+                    android:textColor="#C3BBBB" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FBF7EF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Rol: Follower / Leader" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Tipus: Dancer" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Bio: Lorem ipsum sumadak aasdb asdbasda asdabs bas dasdaa sd asasdasdasd askjfbasif aojfhasoas aousdhada sdhasdasd asodhasd asd asdasdasda josdasd ajsdasdasd ojasdasdasda uosdasdasuod asdasduoa sdasda sodasdasoh da" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBF7EF"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N'ha apràs a"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="Swing Maniacs"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Fotografies"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/user1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/professorsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Professors"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/tematicRed"
+                />
+            <Button
+                android:id="@+id/seguidorsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Seguidors"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/tematicRed"
+                />
+            <Button
+                android:id="@+id/seguintButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Seguint"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/tematicRed"
+                />
+            <Button
+                android:id="@+id/mogudesButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Mogudes"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/tematicRed"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CalendarFragment">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="330sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="10sp"
+        >
+
+        <TableRow
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/totsBTN"
+                android:background="@color/brown_light"
+                android:layout_width="110sp"
+                android:layout_height="60sp"
+                android:paddingTop="25sp"
+                android:textAlignment="center"
+                android:text="Tots"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/amicsBTN"
+                android:background="@color/brown_light"
+                android:layout_width="110sp"
+                android:layout_height="60sp"
+                android:textAlignment="center"
+                android:paddingTop="25sp"
+                android:text="D'amics"
+                android:textSize="20sp" />
+            <TextView
+                android:background="@color/brown_light"
+                android:id="@+id/asistireBTN"
+                android:layout_width="110sp"
+                android:layout_height="60sp"
+                android:paddingTop="25sp"
+                android:textAlignment="center"
+                android:text="Assistiré"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/filtresTV"
+        android:layout_below="@+id/tableLayout"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/brown_light"
+        android:textSize="20sp"
+        android:text="@string/filters_spain"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMogudes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tableLayout"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="63dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/reloj"
+        tools:ignore="MenuTitle"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/periodico"
+        tools:ignore="MenuTitle"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/favorito"
+        tools:ignore="MenuTitle"/>
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_today"
+        tools:ignore="MenuTitle"/>
+    <item
+        android:id="@+id/page_5"
+        android:enabled="true"
+        android:icon="@drawable/chat_icon"
+        tools:ignore="MenuTitle"/>
+</menu>
