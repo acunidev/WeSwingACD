@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="10dp"
-                android:text="Bio: Lorem ipsum sumadak aasdb asdbasda asdabs bas dasdaa sd asasdasdasd askjfbasif aojfhasoas aousdhada sdhasdasd asodhasd asd asdasdasda josdasd ajsdasdasd ojasdasdasda uosdasdasuod asdasduoa sdasda sodasdasoh da" />
+                android:text="Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in"/>
 
             <View
                 android:id="@+id/divider3"

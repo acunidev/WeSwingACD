@@ -3,7 +3,7 @@
 
     <string-array name="genero">
         <item>Hombre</item>
-        <item>Mulher</item>
+        <item>Mujer</item>
         <item>Otros</item>
     </string-array>
 
@@ -11,7 +11,6 @@
         <item>Español</item>
         <item>Ingles</item>
         <item>Catalan</item>
-        <item>Tampoco se tantos idiomas man</item>
     </string-array>
 
     <string-array name="pais">
@@ -29,14 +28,13 @@
         <item>Andorra la Vella</item>
         <item>Roma</item>
         <item>Oporto</item>
-        <item>Damasco</item>
     </string-array>
 
     <string-array name="ciutats2">
-        <item>Totes les zones</item>
-        <item>Catalunya</item>
+        <item>Barcelona</item>
         <item>Madrid</item>
         <item>Valencia</item>
+        <item>Valladolid</item>
     </string-array>
 
     <string-array name="follower">
